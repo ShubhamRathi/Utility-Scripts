@@ -1,0 +1,2 @@
+Install FFMPEG: https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg
+find *.MTS | sed 's:\ :\\\ :g'| sed 's/^/file /' > fl.txt; ffmpeg -f concat -i fl.txt -c copy output.avi; rm fl.txt
